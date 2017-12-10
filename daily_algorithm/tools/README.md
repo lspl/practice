@@ -1,1 +1,1 @@
-用作工具类，提供各种常用的数据结构，如链表(ListNode), 二叉树（BinaryTree)
+用作工具类，提供各种常用的数据结构，方便调用。如链表(ListNode), 二叉树（TreeNode)
