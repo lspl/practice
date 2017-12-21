@@ -25,3 +25,4 @@ nbdist/
 
 ### Java ###
 *.class
+*.jar
