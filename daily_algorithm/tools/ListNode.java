@@ -17,20 +17,19 @@ public class ListNode {
             return null;
         }
         ListNode result = new ListNode(arr[0]);
-        ListNode temp = result.next;
+        ListNode head = result;
         for (int i = 1; i < arr.length; i++) {
-            temp = new ListNode(arr[i]);
-            temp = temp.next;
+            head.next = new ListNode(arr[i]);
+            head = head.next;
         }
         return result;
     }
 
     public static void println(ListNode list) {
-        if (list != null) {
-            System.out.print(list.val);
-            while((list = list.next) != null) {
-                System.out.print(" " + list.val);
-            }
+        ListNode head = list;
+        while(head != null) {
+            System.out.print(head.val + " ");
+            head = head.next;
         }
         System.out.println();
     }
