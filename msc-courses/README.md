@@ -1,6 +1,6 @@
 ## 项目介绍
 简单应用springcloud中的eureka组件进行服务发现和注册
-> from: [开课吧-JAVA架构师之微服务和分布式](learn.kaikeba.com/catalog/211176?type=1)
+> from: [开课吧-JAVA架构师之微服务和分布式](https://learn.kaikeba.com/catalog/211176?type=1)
 - 00-eurekaserver-8000: eureka服务
 - 01-consumer-8080: springboot的consumer
 - 01-provider-8081: sprintboot的provider
