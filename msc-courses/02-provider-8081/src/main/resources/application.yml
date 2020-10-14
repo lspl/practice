@@ -43,6 +43,10 @@ eureka:
       defaultZone: http://localhost:8000/eureka
   instance:
     instance-id: abcmsc-provider-8081
+    # 指定eureka client每隔10s向eureka server发送心跳
+    lease-renewal-interval-in-seconds: 10
+    # 接收最后一次心跳后，eureka server将client从注册表移除前的等待时间(单位:s)
+    lease-expiration-duration-in-seconds: 30
 
 
 info:
