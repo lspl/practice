@@ -26,6 +26,9 @@ public class TestLocalDateTime {
         ldt2 = ldt2.minusMonths(3);
         System.out.println(ldt2);
 
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        System.out.println(ldt2.format(formatter));
+
         System.out.println(ldt2.getYear());
         System.out.println(ldt2.getMonthValue());
         System.out.println(ldt2.getDayOfMonth());
