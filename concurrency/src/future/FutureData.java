@@ -19,7 +19,7 @@ public class FutureData implements Data{
 	}
 	
 	@Override
-	public synchronized String getRequest() {
+	public synchronized String getResult() {
 		//如果没装载好 程序就一直处于阻塞状态
 		while(!isReady){
 			try {
@@ -29,7 +29,7 @@ public class FutureData implements Data{
 			}
 		}
 		//装载好直接获取数据即可
-		return this.realData.getRequest();
+		return this.realData.getResult();
 	}
 
 

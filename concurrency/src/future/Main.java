@@ -6,10 +6,10 @@ public class Main {
 		
 		FutureClient fc = new FutureClient();
 		Data data = fc.request("请求参数");
-		System.out.println("请求发送成功!");
-		System.out.println("做其他的事情...");
+		System.out.println(System.currentTimeMillis() + ", 请求发送成功!");
+		System.out.println(System.currentTimeMillis() + ", 做其他的事情...");
 		
-		String result = data.getRequest();
+		String result = data.getResult();
 		System.out.println(result);
 		
 	}
